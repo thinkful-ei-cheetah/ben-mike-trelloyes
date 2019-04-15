@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import {STORE} from './src/store.js';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App{...STORE} />, document.getElementById('root'));
 
-serviceWorker.unregister();
