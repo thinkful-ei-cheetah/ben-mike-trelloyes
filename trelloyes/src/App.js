@@ -1,11 +1,11 @@
 import React from 'react';
-import './src/App.css';
-import List from './src/List.js';
+import './App.css';
+import List from './List.js';
 
 export default function App(props) {
     
     const listItems = props.lists.map(component =>
-        <List key={component.id} header={component.header} cards={component.CardIds} allCards={props.allCards}/>
+        <List key={component.id} header={component.header} cards={component.cardIds} allCards={props.allCards}/>
     );
         
     return (
